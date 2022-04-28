@@ -81,7 +81,7 @@ html {
 .flexContainer {
     display: flex;
 }
-
+/* section made using css flex */
 .skill {
     border-radius: 20px;
     text-align: left;
@@ -113,16 +113,18 @@ html {
 
 }
 
-.myWork {
+#myWork {
+    
     padding: 15px 5% 15px 5%;
     text-align: center;
     background-color: #9ACFFF;
     border: solid 3px;
     border-color: aquamarine;
 }
-
+/* section made using css grid */
 .workGrid {
-    padding: 30px 30px 30px 30px;
+    margin:20px;
+    padding: 20px 20px 20px 20px;
     background: rgba(255, 255, 255, 0.57);
     border-radius: 28px;
     display: grid;
@@ -133,6 +135,7 @@ html {
 }
 
 .workImg {
+    padding: 20px;
     border-radius: 10px;
     grid-column-start: 4;
     grid-column-end: 5;
@@ -141,6 +144,14 @@ html {
     height: inherit 90%;
     width:auto;
 }
+
+.aboutMe{ background: #CEFFC7;
+    border: 3px solid;
+    padding:5%;
+}
+.aboutMe H1 {text-align: center;}
+
+.workImg img {border-radius: 10px;}
 
 .workTitle {
     text-align: center;
