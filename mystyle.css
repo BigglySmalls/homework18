@@ -1,9 +1,19 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    /* background-color: red; */
+}
+
+
+
+
 h1 {
     font-family: 'Javanese Text';
     font-style: normal;
     font-weight: 400;
     font-size: 64px;
-    line-height: 1px;
+
+
 }
 
 h2 {
@@ -11,22 +21,30 @@ h2 {
     font-style: normal;
     font-weight: 400;
     font-size: 48px;
-    line-height: 50px;
+ 
     text-decoration: underline;
 }
 
-h3 {font-family: 'Javanese Text';
+.margin-left {
+    margin-left: 100%;
+}
+
+h3 {
+    font-family: 'Javanese Text';
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
-    line-height: 50px;}
+    line-height: 50px;
+
+}
 
 p {
     font-family: 'Kadwa';
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 20px;
     line-height: 44px;
+
 }
 
 .inline-block {
@@ -46,18 +64,33 @@ p {
     position: relative;
     width: 100%;
 }
+.topnav a {color: white;}
+
+.heroSection {
+    background: #D9A465;
+    border: 3px solid;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 3;
+}
 
 .hero {
-    justify-content: center;
-    position: flex;
-    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
     height: 500px;
     left: 0px;
-    background: #D9A465;
+    
+    z-index: 2;
+
 }
 
 .hero-text {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
 }
 
 .hero-image {
@@ -81,14 +114,16 @@ html {
 .flexContainer {
     display: flex;
 }
+
 /* section made using css flex */
 .skill {
     border-radius: 20px;
     text-align: left;
     display: flex;
     align-items: center;
-    /border: 2px solid;
+    /* border: 2px solid; */
     border-color: brown;
+    padding: 30px;
 }
 
 
@@ -99,14 +134,15 @@ html {
     padding: 15px 5% 15px 5%;
     display: flex;
     flex-direction: column;
-    /border: solid 3px;
+    /* /border: solid 3px; */
+
     border-color: blueviolet;
 }
 
 .skillImg {
     padding: 10px 10px 10px 10px;
     justify-content: center;
-    height:75%;
+    height: 75%;
     width: 75%;
     border: solid 3px;
     border-color: aquamarine;
@@ -114,16 +150,17 @@ html {
 }
 
 #myWork {
-    
+
     padding: 15px 5% 15px 5%;
     text-align: center;
     background-color: #9ACFFF;
     border: solid 3px;
-    border-color: aquamarine;
+    /* border-color: aquamarine; */
 }
+
 /* section made using css grid */
 .workGrid {
-    margin:20px;
+    margin: 20px;
     padding: 20px 20px 20px 20px;
     background: rgba(255, 255, 255, 0.57);
     border-radius: 28px;
@@ -142,16 +179,22 @@ html {
     grid-row-start: 1;
     grid-row-end: 3;
     height: inherit 90%;
-    width:auto;
+    width: auto;
 }
 
-.aboutMe{ background: #CEFFC7;
+#aboutMe {
+    background: #CEFFC7;
     border: 3px solid;
-    padding:5%;
+    padding: 5%;
 }
-.aboutMe H1 {text-align: center;}
 
-.workImg img {border-radius: 10px;}
+.aboutMe H1 {
+    text-align: center;
+}
+
+.workImg img {
+    border-radius: 10px;
+}
 
 .workTitle {
     text-align: center;
@@ -160,6 +203,7 @@ html {
     grid-row-start: 1;
     grid-row-end: 2;
 }
+
 /* my work discriptions */
 .workDis {
     text-align: left;
@@ -167,11 +211,12 @@ html {
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
-    padding: 0px 50px 0px 50px;
+    padding: 20px 50px 20px 50px;
 }
+
 /* skill discriptions */
 .skillDis {
-    /sborder: solid 3px;
+    /* sborder: solid 3px; */
     padding: 0px 25px 0px 25px;
     border-color: blueviolet;
 }
